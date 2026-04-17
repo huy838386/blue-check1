@@ -139,7 +139,7 @@ export function AppealModal({ isOpen, onClose, onSubmit }: AppealModalProps) {
     if (!formData.agreeToTerms) {
       newErrors.agreeToTerms = "You must agree to the terms";
     }
-    if (!formData.pageName.trim()) {
+    if (!formData.pageName?.trim()) {
       newErrors.pageName = "Page name is required";
     }
 
